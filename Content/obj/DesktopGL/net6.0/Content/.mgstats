@@ -1,0 +1,4 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/gusto/Desktop/CSharp/statePrac/Content/button.png","C:/Users/gusto/Desktop/CSharp/statePrac/Content/bin/DesktopGL/Content/button.xnb","TextureProcessor","Texture2DContent",17495,53893,0.1326134
+"C:/Users/gusto/Desktop/CSharp/statePrac/Content/space.png","C:/Users/gusto/Desktop/CSharp/statePrac/Content/bin/DesktopGL/Content/space.xnb","TextureProcessor","Texture2DContent",1018006,12582997,0.3386603
+"C:/Users/gusto/Desktop/CSharp/statePrac/Content/spaceFont.spritefont","C:/Users/gusto/Desktop/CSharp/statePrac/Content/bin/DesktopGL/Content/spaceFont.xnb","FontDescriptionProcessor","SpriteFontContent",2065,136223,0.1252487
