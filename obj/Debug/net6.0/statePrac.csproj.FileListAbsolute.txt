@@ -26,3 +26,12 @@ C:\Users\gusto\Desktop\CSharp\statePrac\obj\Debug\net6.0\ref\statePrac.dll
 C:\Users\gusto\Desktop\CSharp\statePrac\bin\Debug\net6.0\Content\button.xnb
 C:\Users\gusto\Desktop\CSharp\statePrac\bin\Debug\net6.0\Content\space.xnb
 C:\Users\gusto\Desktop\CSharp\statePrac\bin\Debug\net6.0\Content\spaceFont.xnb
+C:\Users\gusto\Desktop\CSharp\statePrac\bin\Debug\net6.0\Content\background.xnb
+C:\Users\gusto\Desktop\CSharp\statePrac\bin\Debug\net6.0\Content\ball.xnb
+C:\Users\gusto\Desktop\CSharp\statePrac\bin\Debug\net6.0\Content\player.xnb
+C:\Users\gusto\Desktop\CSharp\statePrac\bin\Debug\net6.0\Content\skull.xnb
+C:\Users\gusto\Desktop\CSharp\statePrac\bin\Debug\net6.0\Content\walkDown.xnb
+C:\Users\gusto\Desktop\CSharp\statePrac\bin\Debug\net6.0\Content\walkLeft.xnb
+C:\Users\gusto\Desktop\CSharp\statePrac\bin\Debug\net6.0\Content\walkRight.xnb
+C:\Users\gusto\Desktop\CSharp\statePrac\bin\Debug\net6.0\Content\walkUp.xnb
+C:\Users\gusto\Desktop\CSharp\statePrac\bin\Debug\net6.0\Content\galleryFont.xnb

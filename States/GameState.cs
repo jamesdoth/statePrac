@@ -1,26 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-using statePrac.States;
-using statePrac;
 
 namespace statePrac.States
 {
     public class GameState : State
     {
-        public GameState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
-          : base(game, graphicsDevice, content)
+
+        Texture2D background;
+        SpriteFont gameFont;
+
+        public GameState(Game1 game, GraphicsDevice graphicsDevice, ContentManager Content)
+          : base(game, graphicsDevice, Content)
         {
+            background = Content.Load<Texture2D>("background");
+            gameFont = Content.Load<SpriteFont>("galleryFont");
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-
+            spriteBatch.Begin();
+            spriteBatch.Draw(background, new Vector2(-500, -500), Color.White);
+            spriteBatch.End();
         }
 
         public override void PostUpdate(GameTime gameTime)

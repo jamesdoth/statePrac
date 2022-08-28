@@ -1,14 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-using statePrac.States;
-using statePrac;
 using statePrac.Controls;
 
 namespace statePrac.States
@@ -17,13 +11,21 @@ namespace statePrac.States
     {
         private List<Component> _components;
 
+        public Texture2D buttonTexture;
+        public SpriteFont buttonFont;
+        private Texture2D background;
+        private Button newGameButton;
+        private Button loadGameButton;
+        private Button quitGameButton;
+
         public MenuState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
           : base(game, graphicsDevice, content)
         {
-            var buttonTexture = _content.Load<Texture2D>("button");
-            var buttonFont = _content.Load<SpriteFont>("spaceFont");
+            buttonTexture = _content.Load<Texture2D>("button");
+            buttonFont = _content.Load<SpriteFont>("spaceFont");
+            background = _content.Load<Texture2D>("space");           
 
-            var newGameButton = new Button(buttonTexture, buttonFont)
+            newGameButton = new Button(buttonTexture, buttonFont)
             {
                 Position = new Vector2(300, 200),
                 Text = "New Game",
@@ -31,7 +33,7 @@ namespace statePrac.States
 
             newGameButton.Click += NewGameButton_Click;
 
-            var loadGameButton = new Button(buttonTexture, buttonFont)
+            loadGameButton = new Button(buttonTexture, buttonFont)
             {
                 Position = new Vector2(300, 250),
                 Text = "Load Game",
@@ -39,7 +41,7 @@ namespace statePrac.States
 
             loadGameButton.Click += LoadGameButton_Click;
 
-            var quitGameButton = new Button(buttonTexture, buttonFont)
+            quitGameButton = new Button(buttonTexture, buttonFont)
             {
                 Position = new Vector2(300, 300),
                 Text = "Quit Game",
@@ -48,16 +50,18 @@ namespace statePrac.States
             quitGameButton.Click += QuitGameButton_Click;
 
             _components = new List<Component>()
-      {
-        newGameButton,
-        loadGameButton,
-        quitGameButton,
-      };
+            {
+                newGameButton,
+                loadGameButton,
+                quitGameButton,
+            };
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             spriteBatch.Begin();
+
+            spriteBatch.Draw(background, new Vector2(-500, -500), Color.White);
 
             foreach (var component in _components)
                 component.Draw(gameTime, spriteBatch);

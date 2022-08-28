@@ -1,4 +1,13 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/gusto/Desktop/CSharp/statePrac/Content/background.png","C:/Users/gusto/Desktop/CSharp/statePrac/Content/bin/DesktopGL/background.xnb","TextureProcessor","Texture2DContent",70634,24920149,0.9180366
+"C:/Users/gusto/Desktop/CSharp/statePrac/Content/ball.png","C:/Users/gusto/Desktop/CSharp/statePrac/Content/bin/DesktopGL/ball.xnb","TextureProcessor","Texture2DContent",699,36949,0.0033198
 "C:/Users/gusto/Desktop/CSharp/statePrac/Content/button.png","C:/Users/gusto/Desktop/CSharp/statePrac/Content/bin/DesktopGL/button.xnb","TextureProcessor","Texture2DContent",17495,53893,0.1621537
+"C:/Users/gusto/Desktop/CSharp/statePrac/Content/galleryFont.spritefont","C:/Users/gusto/Desktop/CSharp/statePrac/Content/bin/DesktopGL/galleryFont.xnb","FontDescriptionProcessor","SpriteFontContent",2065,70687,0.2346081
+"C:/Users/gusto/Desktop/CSharp/statePrac/Content/player.png","C:/Users/gusto/Desktop/CSharp/statePrac/Content/bin/DesktopGL/player.xnb","TextureProcessor","Texture2DContent",1072,36949,0.0033979
+"C:/Users/gusto/Desktop/CSharp/statePrac/Content/skull.png","C:/Users/gusto/Desktop/CSharp/statePrac/Content/bin/DesktopGL/skull.xnb","TextureProcessor","Texture2DContent",9601,506965,0.0167517
 "C:/Users/gusto/Desktop/CSharp/statePrac/Content/space.png","C:/Users/gusto/Desktop/CSharp/statePrac/Content/bin/DesktopGL/space.xnb","TextureProcessor","Texture2DContent",1018006,12582997,0.474346
 "C:/Users/gusto/Desktop/CSharp/statePrac/Content/spaceFont.spritefont","C:/Users/gusto/Desktop/CSharp/statePrac/Content/bin/DesktopGL/spaceFont.xnb","FontDescriptionProcessor","SpriteFontContent",2065,136223,0.1188902
+"C:/Users/gusto/Desktop/CSharp/statePrac/Content/walkDown.png","C:/Users/gusto/Desktop/CSharp/statePrac/Content/bin/DesktopGL/walkDown.xnb","TextureProcessor","Texture2DContent",5078,147541,0.0063536
+"C:/Users/gusto/Desktop/CSharp/statePrac/Content/walkLeft.png","C:/Users/gusto/Desktop/CSharp/statePrac/Content/bin/DesktopGL/walkLeft.xnb","TextureProcessor","Texture2DContent",5640,147541,0.007143
+"C:/Users/gusto/Desktop/CSharp/statePrac/Content/walkRight.png","C:/Users/gusto/Desktop/CSharp/statePrac/Content/bin/DesktopGL/walkRight.xnb","TextureProcessor","Texture2DContent",5308,147541,0.0086079
+"C:/Users/gusto/Desktop/CSharp/statePrac/Content/walkUp.png","C:/Users/gusto/Desktop/CSharp/statePrac/Content/bin/DesktopGL/walkUp.xnb","TextureProcessor","Texture2DContent",4574,147541,0.0060041
