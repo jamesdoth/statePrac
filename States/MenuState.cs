@@ -27,7 +27,7 @@ namespace statePrac.States
 
             newGameButton = new Button(buttonTexture, buttonFont)
             {
-                Position = new Vector2(300, 200),
+                Position = new Vector2(575, 150),
                 Text = "New Game",
             };
 
@@ -35,7 +35,7 @@ namespace statePrac.States
 
             loadGameButton = new Button(buttonTexture, buttonFont)
             {
-                Position = new Vector2(300, 250),
+                Position = new Vector2(575, 300),
                 Text = "Load Game",
             };
 
@@ -43,7 +43,7 @@ namespace statePrac.States
 
             quitGameButton = new Button(buttonTexture, buttonFont)
             {
-                Position = new Vector2(300, 300),
+                Position = new Vector2(575, 450),
                 Text = "Quit Game",
             };
 
@@ -69,14 +69,19 @@ namespace statePrac.States
             spriteBatch.End();
         }
 
+        private void NewGameButton_Click(object sender, EventArgs e)
+        {
+            _game.ChangeState(new GameState(_game, _graphicsDevice, _content));
+        }
+
         private void LoadGameButton_Click(object sender, EventArgs e)
         {
             Console.WriteLine("Load Game");
         }
 
-        private void NewGameButton_Click(object sender, EventArgs e)
+        private void QuitGameButton_Click(object sender, EventArgs e)
         {
-            _game.ChangeState(new GameState(_game, _graphicsDevice, _content));
+            _game.Exit();
         }
 
         public override void PostUpdate(GameTime gameTime)
@@ -88,11 +93,6 @@ namespace statePrac.States
         {
             foreach (var component in _components)
                 component.Update(gameTime);
-        }
-
-        private void QuitGameButton_Click(object sender, EventArgs e)
-        {
-            _game.Exit();
         }
     }
 }
